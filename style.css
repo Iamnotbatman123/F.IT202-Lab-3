@@ -1,0 +1,77 @@
+header, footer {
+	text-align: center;
+}
+
+footer h3 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Inter', Arial, sans-serif;
+
+}
+
+h1 {
+	margin: 0 auto 24px;
+}
+
+form {
+	width: 90%;
+	max-width: 480px;
+	margin: 0 auto 20px;
+	padding: 20px;
+	border: 2px solid #0f92df;
+	border-radius: 8px;
+	background-color: #e3f5f4;
+}
+
+form > label {
+	font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+	width: 90%;
+	max-width: 400px;
+	margin: 5px 0 12px;
+	padding: 9px;
+	border: 1px solid #0f92df;
+	border-radius: 10px;
+}
+
+input:focus, select:focus {
+	border-color: rgb(85, 20, 170);
+	outline: 2px solid red;
+}
+
+input[type="checkbox"] {
+	margin: 6px 6px 6px 8px;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 16px auto 12px;
+	padding: 10px 20px;
+	border: 2px solid #2491cf;
+	border-radius: 10px;
+	color: white;
+	background-color: green;
+}
+
+input[type="submit"]:hover {
+	background-color: #13705c;
+}
+
+.badge {
+	background-color: black;
+	color: white;
+	padding: 4px 8px;
+	text-align: center;
+	border-radius: 10px;
+}

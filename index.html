@@ -4,7 +4,10 @@
 <head>
     <title>Судалгаа</title>
     <meta charset="UTF-8">
-    <meat name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
     <main>
         <form>
             <label for="userName">Нэр</label><br>
-            <input type="text" id="userName" name="userName" placeholder="Болд" required> <br>
+            <input type="text" id="userName" name="userName" placeholder="Бат-Очир" required> <br>
 
             <labeL for="email">Э-Майл</labeL><br>
             <input type="email" id="email" name="email" placeholder="you@mail.com" required> <br>
@@ -28,32 +31,32 @@
                 required><br>
 
             <label>Хүйс</label><br>
-            <input type="radio" id="male" name="gender" value="Эр" required>
+            <input type="radio" id="male" name="gender" value="Эр" class="gender" required>
             <label for="male">Эр</label><br>
-            <input type="radio" id="female" name="gender" value="Эм" required>
+            <input type="radio" id="female" name="gender" value="Эм" class="gender" required>
             <label for="female">Эм</label><br>
-            <input type="radio" id="other" name="gender" value="Бусад" required>
+            <input type="radio" id="other" name="gender" value="Бусад" class="gender" required>
             <label for="other">Бусад</label><br>
 
             <label>Төрсөн он сар</label><br>
             <input type="date" name="date" required><br>
 
             <label>Ашиглаж чадах програмчлалын хэл</label><br>
-            <input type="checkbox" id="lngC" name="prgLanguage" value="C">
+            <input type="checkbox" id="lngC" name="prgLanguage" value="C" class="progLng">
             <label for="lngC">C</label><br>
-            <input type="checkbox" id="lngPython" name="prgLanguage" value="Python">
+            <input type="checkbox" id="lngPython" name="prgLanguage" value="Python" class="progLng">
             <label for="lngPython">Python</label><br>
-            <input type="checkbox" id="lngJava" name="prgLanguage" value="Java">
+            <input type="checkbox" id="lngJava" name="prgLanguage" value="Java" class="progLng">
             <label for="lngJava">Java</label><br>
-            <input type="checkbox" id="lngHTML" name="prgLanguage" value="HTML">
+            <input type="checkbox" id="lngHTML" name="prgLanguage" value="HTML" class="progLng">
             <label for="lngHTML">HTML</label><br>
-            <input type="checkbox" id="lngJS" name="prgLanguage" value="JavaScript">
+            <input type="checkbox" id="lngJS" name="prgLanguage" value="JavaScript" class="progLng">
             <label for="lngJS">JavaScript</label><br>
-            <input type="checkbox" id="lngRust" name="prgLanguage" value="Rust">
+            <input type="checkbox" id="lngRust" name="prgLanguage" value="Rust" class="progLng">
             <label for="lngRust">Rust</label><br>
 
             <label>Дүүрэг</label>
-            <select>
+            <select class="province">
                 <option>
                     Багануур
                 </option>
@@ -95,6 +98,11 @@
             <input type="submit" value="Оруулах">
         </form>
     </main>
+
+    <div class="badge-demo">
+        <span class="badge badge-relative">Relative badge</span>
+        <span class="badge badge-absolute">Absolute badge</span>
+    </div>
 
     <footer>
         <h3>Холбоо барих</h3>
